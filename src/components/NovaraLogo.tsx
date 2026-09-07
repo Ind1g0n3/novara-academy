@@ -27,21 +27,13 @@ export const NovaraLogo: React.FC<NovaraLogoProps> = ({
 
   return (
     <div className={`flex items-center gap-3.5 group select-none ${className}`}>
-      {/* Geometric Logo Container with Gold Ambient Halo */}
+      {/* Floating Geometric Logo Mark - Clean with no background, outline, or border */}
       <div className="relative flex items-center justify-center">
-        {/* Ambient Halo Ring (Always subtle, intensifies on hover) */}
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#C9A84C]/35 via-[#E8D5A3]/25 to-[#37ABFD]/20 blur-md opacity-50 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500 pointer-events-none" />
-
-        {/* SVG Mark */}
-        <div className="relative overflow-hidden rounded-xl p-1 flex items-center justify-center bg-gradient-to-b from-[#0F172A]/70 to-[#030712]/90 border border-[#C9A84C]/30 shadow-[0_0_18px_rgba(201,168,76,0.25)] group-hover:border-[#C9A84C]/60 transition-all duration-300">
-          <img
-            src="/novara-logo.svg"
-            alt="Novara Logo"
-            className={`${imgClassName || currentSize.img} w-auto object-contain transition-all duration-500 group-hover:scale-108 group-hover:-rotate-2 group-hover:brightness-125 filter drop-shadow-[0_0_14px_rgba(201,168,76,0.55)] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] group-hover:drop-shadow-[0_0_26px_rgba(201,168,76,0.9)]`}
-          />
-          {/* Light Sweep Effect */}
-          <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none" />
-        </div>
+        <img
+          src="/novara-logo.svg"
+          alt="Novara Logo"
+          className={`${imgClassName || currentSize.img} w-auto object-contain transition-all duration-500 group-hover:scale-105 group-hover:brightness-110 filter drop-shadow-[0_0_12px_rgba(201,168,76,0.35)] group-hover:drop-shadow-[0_0_24px_rgba(201,168,76,0.75)]`}
+        />
       </div>
 
       {/* Brand Typography */}
