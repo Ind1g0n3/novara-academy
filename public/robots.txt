@@ -6,6 +6,7 @@ Disallow: /courses/
 Disallow: /*_mindmap.html
 Disallow: /operator_quickstart.html
 Disallow: /master_curriculum.html
+Disallow: /*_lesson.html
 Disallow: /bg-video.mp4
 
 # ALLOWED: Public Landing Page & Blog Content
