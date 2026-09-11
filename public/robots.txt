@@ -1,0 +1,6 @@
+# robots.txt for Novara Systems (https://novarasystems.store)
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://novarasystems.store/sitemap.xml
