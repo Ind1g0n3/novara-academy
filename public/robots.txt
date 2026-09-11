@@ -1,6 +1,15 @@
 # robots.txt for Novara Systems (https://novarasystems.store)
 User-agent: *
+
+# PROTECTED: Paid Skool Member & Proprietary Course Content (DO NOT CRAWL)
+Disallow: /courses/
+Disallow: /*_mindmap.html
+Disallow: /operator_quickstart.html
+Disallow: /master_curriculum.html
+Disallow: /bg-video.mp4
+
+# ALLOWED: Public Landing Page & Blog Content
 Allow: /
 
-# Sitemap location
+# Sitemap
 Sitemap: https://novarasystems.store/sitemap.xml
