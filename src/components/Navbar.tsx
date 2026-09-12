@@ -27,7 +27,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
     { name: "Agent Constellation", href: "#agents", icon: Compass },
     { name: "Curriculum", href: "#curriculum", icon: BookOpen },
     { name: "Prompt Vault", href: "#vault", icon: CodeXml },
-    { name: "Free Blueprints", href: "#blog", icon: BookOpen },
+    { name: "Blog & Blueprints", href: "#blog", icon: BookOpen },
     { name: "YouTube Hub", href: "#youtube", icon: Youtube },
     { name: "Updates", href: "#changelog", icon: Activity },
     { name: "FAQ", href: "#faq", icon: HelpCircle },

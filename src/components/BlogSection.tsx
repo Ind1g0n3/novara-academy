@@ -25,10 +25,10 @@ export const BlogSection: React.FC = () => {
       <div className="text-center max-w-3xl mx-auto mb-16">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#C9A84C]/10 border border-[#C9A84C]/30 text-xs font-mono font-bold text-[#E8D5A3] uppercase tracking-widest mb-4">
           <BookOpen className="w-3.5 h-3.5 text-[#C9A84C]" />
-          <span>The Knowledge Lab & Free Blueprints</span>
+          <span>Official Systems Blog & Engineering Blueprints</span>
         </div>
         <h2 className="font-aquire text-xl sm:text-2xl md:text-3xl font-bold tracking-wider text-[#EDF0F5] mb-3 uppercase">
-          Rotating Free Guides & <span className="gold-gradient-text">Engineering Blueprints</span>
+          Novara Systems Blog & <span className="gold-gradient-text">Engineering Blueprints</span>
         </h2>
         <p className="text-sm sm:text-base text-[#94A3B8] leading-relaxed">
           In-depth breakdowns on multi-account scaling, anti-ban infrastructure, 4K rendering pipelines, and agency monetization. These blueprints rotate weekly based on our latest video drops.
