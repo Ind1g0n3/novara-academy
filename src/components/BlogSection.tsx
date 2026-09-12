@@ -16,7 +16,7 @@ export const BlogSection: React.FC = () => {
   const [activePost, setActivePost] = useState<BlogPost | null>(null);
 
   return (
-    <section id="blog" className="relative py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+    <section id="blog" className="relative py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10 scroll-mt-24">
       
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#C9A84C]/8 blur-[140px] pointer-events-none -z-10" />
@@ -25,13 +25,13 @@ export const BlogSection: React.FC = () => {
       <div className="text-center max-w-3xl mx-auto mb-16">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#C9A84C]/10 border border-[#C9A84C]/30 text-xs font-mono font-bold text-[#E8D5A3] uppercase tracking-widest mb-4">
           <BookOpen className="w-3.5 h-3.5 text-[#C9A84C]" />
-          <span>Official Systems Blog & Engineering Blueprints</span>
+          <span>Official Knowledge Lab &amp; Articles</span>
         </div>
         <h2 className="font-aquire text-xl sm:text-2xl md:text-3xl font-bold tracking-wider text-[#EDF0F5] mb-3 uppercase">
-          Novara Systems Blog & <span className="gold-gradient-text">Engineering Blueprints</span>
+          Novara Systems • <span className="gold-gradient-text">Official Blog</span>
         </h2>
         <p className="text-sm sm:text-base text-[#94A3B8] leading-relaxed">
-          In-depth breakdowns on multi-account scaling, anti-ban infrastructure, 4K rendering pipelines, and agency monetization. These blueprints rotate weekly based on our latest video drops.
+          In-depth breakdowns on multi-account scaling, anti-ban infrastructure, 4K rendering pipelines, and agency monetization. Click any article below to read the complete breakdown.
         </p>
       </div>
 
@@ -40,7 +40,8 @@ export const BlogSection: React.FC = () => {
         {ROTATING_BLOG_POSTS.map((post) => (
           <div
             key={post.id}
-            className="glass-card rounded-3xl p-6 border border-white/10 hover:border-[#C9A84C]/50 transition-all duration-300 flex flex-col justify-between group shadow-xl hover:-translate-y-1 relative overflow-hidden"
+            onClick={() => setActivePost(post)}
+            className="glass-card rounded-3xl p-6 border border-white/10 hover:border-[#C9A84C]/50 transition-all duration-300 flex flex-col justify-between group shadow-xl hover:-translate-y-1 relative overflow-hidden cursor-pointer"
           >
             {/* Top Badge & Meta */}
             <div>
@@ -72,10 +73,13 @@ export const BlogSection: React.FC = () => {
 
             {/* Read Button */}
             <button
-              onClick={() => setActivePost(post)}
-              className="w-full py-3 rounded-xl bg-[#0B1120] border border-white/10 hover:border-[#C9A84C] text-[#E8D5A3] hover:text-white font-mono text-xs font-bold transition-all flex items-center justify-center gap-2 group/btn"
+              onClick={(e) => {
+                e.stopPropagation();
+                setActivePost(post);
+              }}
+              className="w-full py-3 rounded-xl bg-[#0B1120] border border-white/10 group-hover:border-[#C9A84C] text-[#E8D5A3] group-hover:text-white font-mono text-xs font-bold transition-all flex items-center justify-center gap-2 group/btn"
             >
-              <span>Read Full Blueprint</span>
+              <span>Read Full Article</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#C9A84C] transition-transform group-hover/btn:translate-x-1" />
             </button>
           </div>
