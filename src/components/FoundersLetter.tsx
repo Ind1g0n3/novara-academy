@@ -30,7 +30,7 @@ export const FoundersLetter: React.FC = () => {
             Why I Engineered <span className="gold-gradient-text">Novara OS</span>
           </h2>
           <p className="text-xs sm:text-sm font-mono text-[#C9A84C] tracking-wide uppercase">
-            A Letter from LO • Founder & Systems Architect, Novara Media & Novara Labs
+            A Letter from Ricardo Gutierrez • Founder & Systems Architect, CIS Major • Novara Media & Novara Labs
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export const FoundersLetter: React.FC = () => {
           </p>
 
           <p>
-            I realized that surface-level ChatGPT wrappers and single-prompt gimmicks were toys. Real leverage required a true <strong className="text-[#F5E2B3]">Autonomous Multi-Agent Operating System</strong>.
+            As a Computer Information Systems (CIS) major and systems architect, I realized that surface-level ChatGPT wrappers and single-prompt gimmicks were toys. Real leverage required a true <strong className="text-[#F5E2B3]">Autonomous Multi-Agent Operating System</strong>.
           </p>
 
           <p>
@@ -55,7 +55,7 @@ export const FoundersLetter: React.FC = () => {
           {/* Callout Quote */}
           <div className="p-6 rounded-2xl bg-[#05080F]/90 border-l-4 border-[#C9A84C] border-y border-r border-white/5 my-8">
             <p className="text-base sm:text-lg font-medium text-[#F5E2B3] italic leading-relaxed">
-              "We aren't selling you a toy video generator. We built the exact operating infrastructure we run our own media business on every single day  -  and we're handing you the keys."
+              "We aren't selling you a toy video generator. We built the exact operating infrastructure we run our own media business on every single day — and we're handing you the keys."
             </p>
           </div>
 
@@ -86,10 +86,10 @@ export const FoundersLetter: React.FC = () => {
             </div>
             <div>
               <h4 className="font-aquire text-base font-bold text-[#EDF0F5]">
-                LO
+                Ricardo Gutierrez
               </h4>
               <p className="text-xs text-[#8B9BB4] font-mono">
-                Founder & Systems Architect • Novara Media Group
+                Founder & Systems Architect • CIS Major, Novara Media Group
               </p>
               <div className="flex items-center gap-2 text-[11px] text-[#10B981] font-mono pt-1">
                 <ShieldCheck className="w-3.5 h-3.5" />

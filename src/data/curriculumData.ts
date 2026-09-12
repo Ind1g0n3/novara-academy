@@ -131,7 +131,7 @@ export const SKOOL_COMMUNITY_PERKS: SkoolPerk[] = [
   {
     icon: "Video",
     title: "Weekly Live Engineering Masterclasses",
-    description: "Join LO and our technical team every week for live system builds, code teardowns, and direct Q&A."
+    description: "Join Ricardo Gutierrez and our technical team every week for live system builds, code teardowns, and direct Q&A."
   },
   {
     icon: "Users",

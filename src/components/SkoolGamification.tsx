@@ -136,7 +136,7 @@ export const SkoolGamification: React.FC = () => {
             </h3>
             
             <p className="text-xs text-[#8B9BB4] leading-relaxed mb-6">
-              Watch LO code the entire auto-queue replenishment loop live, configure SQLite ledgers, and answer your technical questions.
+              Watch Ricardo Gutierrez code the entire auto-queue replenishment loop live, configure SQLite ledgers, and answer your technical questions.
             </p>
 
             <div className="space-y-2 font-mono text-xs text-[#E8D5A3] mb-6">

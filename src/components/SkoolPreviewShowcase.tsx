@@ -207,10 +207,10 @@ export const SkoolPreviewShowcase: React.FC = () => {
               <div className="p-4 rounded-2xl bg-[#080B14] border border-white/10">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-8 h-8 rounded-full bg-[#C9A84C]/20 border border-[#C9A84C]/40 flex items-center justify-center text-xs font-bold text-[#E8D5A3]">
-                    LO
+                    RG
                   </div>
                   <div>
-                    <span className="text-xs font-bold text-[#EDF0F5]">LO (Founder)</span>
+                    <span className="text-xs font-bold text-[#EDF0F5]">Ricardo Gutierrez (Founder)</span>
                     <span className="text-[10px] font-mono text-[#8B9BB4] ml-2">Weekly Sunday Build</span>
                   </div>
                   <span className="ml-auto px-2 py-0.5 rounded bg-[#F59E0B]/20 text-[#F59E0B] text-[10px] font-mono font-bold">

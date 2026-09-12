@@ -65,7 +65,7 @@ export const COMMUNITY_VALUE_STACK: ValueStackItem[] = [
     title: "Weekly Live Engineering Masterclasses & Architecture Calls",
     category: "Direct Mentorship",
     realValue: "$1,997/yr",
-    description: "Join weekly live screen-share builds with LO and our engineering team. Watch live multi-agent refactors, tool integrations, and get 1-on-1 troubleshooting for your systems.",
+    description: "Join weekly live screen-share builds with Ricardo Gutierrez and our engineering team. Watch live multi-agent refactors, tool integrations, and get 1-on-1 troubleshooting for your systems.",
     includedFree: true,
     highlightTag: "LIVE MENTORSHIP",
     iconName: "Video"
