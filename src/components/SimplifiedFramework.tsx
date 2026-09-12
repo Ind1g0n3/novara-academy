@@ -121,7 +121,7 @@ export const SimplifiedFramework: React.FC = () => {
             Want the full Python codebase, RPA scripts, and multi-agent configs?
           </h4>
           <p className="text-xs sm:text-sm text-[#8B9BB4] mt-1">
-            We share the entire operating system and walkthroughs for free inside our Skool community.
+            Access the entire operating system, architecture, and weekly walkthroughs inside our Skool community.
           </p>
         </div>
         <a
@@ -130,7 +130,7 @@ export const SimplifiedFramework: React.FC = () => {
           rel="noopener noreferrer"
           className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#C9A84C] via-[#E8D5A3] to-[#C9A84C] text-[#030712] font-bold text-xs uppercase tracking-wider hover:brightness-110 shadow-lg shadow-[#C9A84C]/25 transition-all flex items-center gap-2 whitespace-nowrap active:scale-95"
         >
-          <span>Get Free Source Code in Skool</span>
+          <span>Get Full Source Code in Skool</span>
           <ArrowRight className="w-4 h-4" />
         </a>
       </div>

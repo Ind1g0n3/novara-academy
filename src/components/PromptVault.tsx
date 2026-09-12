@@ -120,7 +120,7 @@ export const PromptVault: React.FC = () => {
                 rel="noopener noreferrer"
                 className="w-full py-2.5 rounded-xl font-mono text-xs font-bold transition-all flex items-center justify-center gap-2 bg-[#0B1120] border border-[#C9A84C]/40 text-[#E8D5A3] hover:bg-[#C9A84C] hover:text-[#030712] shadow-md group-hover:border-[#C9A84C]"
               >
-                <span>Unlock Full Prompt in Skool Free</span>
+                <span>Unlock Full Prompt in Skool</span>
                 <ArrowRight className="w-3.5 h-3.5 text-[#C9A84C] group-hover:text-[#030712] transition-transform group-hover:translate-x-1" />
               </a>
             </div>

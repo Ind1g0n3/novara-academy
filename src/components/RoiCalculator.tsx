@@ -140,7 +140,7 @@ export const RoiCalculator: React.FC = () => {
             rel="noopener noreferrer"
             className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#C9A84C] via-[#E8D5A3] to-[#C9A84C] text-[#030712] font-aquire font-bold text-xs uppercase tracking-wider hover:brightness-110 shadow-lg shadow-[#C9A84C]/25 transition-all flex items-center gap-2 whitespace-nowrap active:scale-95"
           >
-            <span>Deploy Free in Skool</span>
+            <span>Deploy Inside Skool</span>
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>

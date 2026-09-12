@@ -37,10 +37,10 @@ export const ValueStack: React.FC = () => {
           <span>The Sovereign Value Stack</span>
         </div>
         <h2 className="font-aquire text-xl sm:text-2xl md:text-3xl font-bold tracking-wider text-[#EDF0F5] mb-3 uppercase">
-          The Entire Autonomous OS Unlocked for <span className="gold-gradient-text">100% Free</span>
+          The Entire Autonomous OS Unlocked Inside the <span className="gold-gradient-text">Inner Circle</span>
         </h2>
         <p className="text-sm sm:text-base text-[#94A3B8] leading-relaxed">
-          Other gurus charge thousands for surface-level prompt PDFs. We give you our complete 6-agent Python architecture, headless browser RPA scripts, 4K rendering pipelines, and weekly live engineering mentorship for free inside the community.
+          Other gurus charge thousands for surface-level prompt PDFs. We give you our complete 6-agent Python architecture, headless browser RPA scripts, 4K rendering pipelines, and weekly live engineering mentorship included with your membership.
         </p>
       </div>
 
@@ -64,7 +64,7 @@ export const ValueStack: React.FC = () => {
                       {item.realValue}
                     </span>
                     <span className="px-2 py-0.5 rounded bg-[#10B981]/20 border border-[#10B981]/40 text-[10px] font-mono font-extrabold text-[#10B981] uppercase">
-                      FREE
+                      INCLUDED
                     </span>
                   </div>
                 </div>
@@ -106,11 +106,11 @@ export const ValueStack: React.FC = () => {
           </div>
 
           <h3 className="font-aquire text-xl sm:text-2xl md:text-3xl font-bold tracking-wider text-[#EDF0F5] mb-3 uppercase">
-            Claim the Entire <span className="gold-gradient-text">Multi-Agent OS</span> for $0
+            Deploy the Full <span className="gold-gradient-text">Multi-Agent OS</span> Today
           </h3>
 
           <p className="text-sm sm:text-base text-[#94A3B8] leading-relaxed mb-8">
-            No credit card required. No hidden upsells on the core engine. Enter the Skool community, introduce yourself in the welcome channel, and download the full OS repository immediately.
+            Complete production codebase, anti-ban browser RPA, 150+ prompt vaults, and weekly live engineering masterclasses. Enter the Skool community and deploy the full OS repository immediately.
           </p>
 
           <a
@@ -120,7 +120,7 @@ export const ValueStack: React.FC = () => {
             className="inline-flex items-center gap-2 px-10 py-5 rounded-2xl bg-gradient-to-r from-[#C9A84C] via-[#E8D5A3] to-[#C9A84C] text-[#030712] font-['Aquire',sans-serif] font-bold text-sm uppercase tracking-widest hover:brightness-110 hover:shadow-[0_0_40px_rgba(201,168,76,0.8)] transition-all transform active:scale-95 shadow-xl"
           >
             <Sparkles className="w-4 h-4 text-[#856343]" />
-            <span>Join the Skool Community Free →</span>
+            <span>Join the Skool Community →</span>
           </a>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-[#8B9BB4]">

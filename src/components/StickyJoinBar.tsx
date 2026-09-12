@@ -17,12 +17,12 @@ export const StickyJoinBar: React.FC = () => {
         <div className="flex items-center gap-3 text-center sm:text-left">
           <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#10B981]/15 border border-[#10B981]/40 text-[10px] sm:text-xs font-mono font-bold text-[#A7F3D0] uppercase shrink-0">
             <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
-            <span>Genesis Cohort 01</span>
+            <span>Inner Circle Live</span>
           </div>
 
           <p className="text-xs sm:text-sm text-[#EDF0F5] font-medium leading-tight">
-            <span className="text-[#F5E2B3] font-bold">First 50 Pioneer Operators</span> lock in 100% Free Lifetime Grandfathered Access.{" "}
-            <span className="text-[#8B9BB4] hidden md:inline font-mono text-xs">(Standard Public Price: $59/mo)</span>
+            <span className="text-[#F5E2B3] font-bold">Novara Inner Circle Membership</span> • Direct access to 6-Agent OS, 150+ Prompts & Weekly Live Builds.{" "}
+            <span className="text-[#C9A84C] hidden md:inline font-mono text-xs font-bold">($59/month)</span>
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export const StickyJoinBar: React.FC = () => {
             className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r from-[#C9A84C] via-[#E8D5A3] to-[#C9A84C] text-[#030712] font-aquire font-bold text-[11px] sm:text-xs uppercase tracking-wider hover:brightness-110 shadow-lg shadow-[#C9A84C]/25 transition-all transform active:scale-95 whitespace-nowrap"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Claim Free Access in Skool</span>
+            <span>Join Inner Circle on Skool</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </a>
 

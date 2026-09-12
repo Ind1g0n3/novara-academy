@@ -4,7 +4,7 @@ export interface ValueStackItem {
   category: string;
   realValue: string;
   description: string;
-  includedFree: boolean;
+  includedInMembership: boolean;
   highlightTag: string;
   iconName: string;
 }
@@ -16,7 +16,7 @@ export const COMMUNITY_VALUE_STACK: ValueStackItem[] = [
     category: "Autonomous Architecture",
     realValue: "$1,497",
     description: "The full orchestration engine that coordinates agent handoffs, crons, self-healing runtime monitors, and durable two-way Durable Knowledge Vault knowledge vault synchronization.",
-    includedFree: true,
+    includedInMembership: true,
     highlightTag: "CORE OS ENGINE",
     iconName: "BrainCircuit"
   },
@@ -26,7 +26,7 @@ export const COMMUNITY_VALUE_STACK: ValueStackItem[] = [
     category: "Prompt Vault",
     realValue: "$997",
     description: "Our private prompt architecture for frontier reasoning models and autonomous swarms that handle deterministic market research, viral copywriting, code refactors, and executive briefings.",
-    includedFree: true,
+    includedInMembership: true,
     highlightTag: "INSTANT DEPLOY",
     iconName: "Sparkles"
   },
@@ -36,7 +36,7 @@ export const COMMUNITY_VALUE_STACK: ValueStackItem[] = [
     category: "Automation & Security",
     realValue: "$897",
     description: "Headless browser automation protocols with hardware profile isolation, EXIF metadata purging (-map_metadata -1), unique audio hashing, and 8-12h anti-flood pacing.",
-    includedFree: true,
+    includedInMembership: true,
     highlightTag: "ANTI-BAN INFRA",
     iconName: "ShieldCheck"
   },
@@ -46,7 +46,7 @@ export const COMMUNITY_VALUE_STACK: ValueStackItem[] = [
     category: "Production Pipeline",
     realValue: "$797",
     description: "Production GPU NVENC rendering scripts with Lanczos 2160x3840 vertical scaling, 8.2x compilation speeds, and neurological 5-stage progressive reveal typography.",
-    includedFree: true,
+    includedInMembership: true,
     highlightTag: "4K GPU ENGINE",
     iconName: "Zap"
   },
@@ -56,7 +56,7 @@ export const COMMUNITY_VALUE_STACK: ValueStackItem[] = [
     category: "Monetization Protocol",
     realValue: "$697",
     description: "Turn organic attention into inbound high-ticket clients. Automated 1-to-1 keyword response triggers deliver tracked private assets generating 12x higher click conversions.",
-    includedFree: true,
+    includedInMembership: true,
     highlightTag: "CLIENT FUNNEL",
     iconName: "Send"
   },
@@ -66,7 +66,7 @@ export const COMMUNITY_VALUE_STACK: ValueStackItem[] = [
     category: "Direct Mentorship",
     realValue: "$1,997/yr",
     description: "Join weekly live screen-share builds with Ricardo Gutierrez and our engineering team. Watch live multi-agent refactors, tool integrations, and get 1-on-1 troubleshooting for your systems.",
-    includedFree: true,
+    includedInMembership: true,
     highlightTag: "LIVE MENTORSHIP",
     iconName: "Video"
   }
@@ -81,7 +81,7 @@ export interface CommunityStat {
 export const COMMUNITY_STATS: CommunityStat[] = [
   { value: "6 Swarm Agents", label: "Autonomous Swarm", description: "Hermes, OpenClaw, Antigravity, Codex, Alfred, Oracle" },
   { value: "150+", label: "Enterprise Blueprints", description: "Production code, prompts & RPA scripts" },
-  { value: "3,500+", label: "Active Operators", description: "First 50 Pioneer Operators (100% Free Lifetime Tier)" },
+  { value: "3,500+", label: "Active Operators", description: "Elite Founders, Creators & Systems Engineers" },
   { value: "99.98%", label: "Autonomous Uptime", description: "Self-healing crons & Durable Knowledge Vault state loops" }
 ];
 
@@ -201,7 +201,7 @@ export const FEATURE_CHECKLIST: FeatureChecklistItem[] = [
     description: "Voice-activated operator interface with 12 registered system tools, daily executive briefings, and confirmation-gated action safeguards."
   },
   {
-    title: "Private Community of Pioneer Operators",
+    title: "Private Community of Inner Circle Operators",
     badge: "INNER CIRCLE",
     description: "Network with high-caliber operators, share multi-account wins, collaborate on tools, and get direct mentorship in weekly live engineering calls."
   }

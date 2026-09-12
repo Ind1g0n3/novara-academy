@@ -16,7 +16,7 @@ export const Hero: React.FC<HeroProps> = ({ currentBrand }) => {
       {/* Top Badge: Join 3,500+ Members */}
       <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0B1120] border border-[#C9A84C]/40 text-xs font-mono font-bold text-[#F5E2B3] uppercase tracking-wider mb-6 shadow-xl">
         <span className="w-2 h-2 rounded-full bg-[#10B981] animate-ping" />
-        <span className="text-[#C9A84C]">GENESIS PIONEER COHORT • HIGH-LEVERAGE LARPING & MULTI-AGENT AI OS</span>
+        <span className="text-[#C9A84C]">NOVARA INNER CIRCLE ($59/MO) • HIGH-LEVERAGE MULTI-AGENT AI OS</span>
       </div>
 
       {/* Brand Kicker with Novara Academy Logo */}
@@ -73,21 +73,24 @@ export const Hero: React.FC<HeroProps> = ({ currentBrand }) => {
         </div>
       </div>
 
-      {/* High-Converting Pricing / Free Box */}
+      {/* High-Converting Pricing Card */}
       <div className="glass-card max-w-lg mx-auto p-6 sm:p-8 rounded-3xl border-2 border-[#C9A84C] shadow-[0_0_50px_rgba(201,168,76,0.25)] mb-8 bg-[#0B1120]/90">
         <div className="flex items-center justify-between text-xs font-mono text-[#8B9BB4] mb-2 pb-2 border-b border-white/10">
-          <span>RETAIL SUBSCRIPTION:</span>
+          <span>STANDARD RETAIL VALUE:</span>
           <span className="line-through text-[#EF4444] font-bold text-sm">$97/month</span>
         </div>
         
-        <div className="font-aquire text-4xl sm:text-5xl font-extrabold text-[#C9A84C] leading-none mb-2">
-          $0
+        <div className="flex items-baseline justify-center gap-2 mb-1">
+          <span className="font-aquire text-4xl sm:text-5xl font-extrabold text-[#C9A84C] leading-none">
+            $59
+          </span>
+          <span className="text-sm font-mono text-[#8B9BB4] uppercase">/ month</span>
         </div>
-        <div className="text-xs sm:text-sm font-mono text-[#8B9BB4] mb-3">
-          Grandfathered 100% Free Lifetime Access (Founding Cohort)
+        <div className="text-xs sm:text-sm font-mono text-[#E8D5A3] mb-3 font-semibold">
+          Official Novara Inner Circle Membership
         </div>
         <div className="inline-block px-3 py-1 rounded-lg bg-[#10B981]/20 text-[#10B981] text-xs font-mono font-bold">
-          💰 Unlocks $6,482 in Locked Multi-Agent Code, RPA Scripts & Prompts
+          💰 Unlocks $6,482 in Production Code, RPA Scripts & Prompts
         </div>
       </div>
 
@@ -100,12 +103,12 @@ export const Hero: React.FC<HeroProps> = ({ currentBrand }) => {
           className="inline-flex items-center justify-center gap-3 w-full max-w-lg py-5 px-8 rounded-2xl bg-gradient-to-r from-[#C9A84C] via-[#E8D5A3] to-[#C9A84C] text-[#030712] font-['Aquire',sans-serif] font-bold text-base sm:text-lg uppercase tracking-widest hover:brightness-110 hover:shadow-[0_0_40px_rgba(201,168,76,0.8)] transition-all transform active:scale-95 shadow-2xl"
         >
           <Sparkles className="w-5 h-5 text-[#856343]" />
-          <span>Join The Inner Circle Free Now</span>
+          <span>Join The Inner Circle Now</span>
           <ArrowRight className="w-5 h-5 ml-1" />
         </a>
 
         <p className="text-xs font-mono text-[#64748B]">
-          🔒 Founding Access Open • No Credit Card Required • Instant Unlock of Locked Code & Prompts
+          🔒 Official Skool Community Access • Instant Unlock of Locked Code & Prompts
         </p>
 
         {/* Updated Badge */}

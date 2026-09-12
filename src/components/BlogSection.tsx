@@ -55,10 +55,10 @@ export const BlogSection: React.FC = () => {
                 </span>
               </div>
 
-              {post.isRotatingFreeDrop && (
+              {post.isFeaturedDrop && (
                 <div className="flex items-center gap-1 text-[10px] font-mono font-bold text-[#10B981] mb-2">
                   <Flame className="w-3.5 h-3.5 text-[#F59E0B]" />
-                  <span>THIS WEEK'S FREE UNLOCKED DROP</span>
+                  <span>THIS WEEK'S FEATURED BLUEPRINT</span>
                 </div>
               )}
 
@@ -124,7 +124,7 @@ export const BlogSection: React.FC = () => {
                 {activePost.publishDate}
               </span>
               <span>•</span>
-              <span className="text-[#10B981] font-bold">100% Free Rotating Community Blueprint</span>
+              <span className="text-[#10B981] font-bold">Featured Architecture Blueprint</span>
             </div>
 
             {/* Key Takeaways Box */}
@@ -184,7 +184,7 @@ export const BlogSection: React.FC = () => {
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-[#C9A84C] via-[#E8D5A3] to-[#C9A84C] text-[#030712] font-aquire font-bold text-xs uppercase tracking-wider hover:brightness-110 shadow-lg shadow-[#C9A84C]/25 transition-all transform active:scale-95"
               >
                 <Sparkles className="w-4 h-4 text-[#856343]" />
-                <span>Join Skool Community Free →</span>
+                <span>Join Skool Community →</span>
               </a>
             </div>
 

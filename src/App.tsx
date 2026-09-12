@@ -58,7 +58,7 @@ export const App: React.FC = () => {
           {/* 04: Problem Section: Traditional Agency Overhead Is Collapsing */}
           <ProblemSection />
 
-          {/* 05: A Letter From The Architect (Founder Vision & Story) */}
+          {/* 05: About Our Founder & Architect (Ricardo Gutierrez) */}
           <FoundersLetter />
 
           {/* 06: What Members Are Doing Right Now (6 Enterprise Pillars) */}
@@ -73,7 +73,7 @@ export const App: React.FC = () => {
           {/* 09: This Is For You If... (6 Personas: Agencies, Larpers, Creators, Founders) */}
           <WhoForGrid />
 
-          {/* 10: The Free Value Stack Breakdown */}
+          {/* 10: The Sovereign Value Stack Breakdown */}
           <ValueStack />
 
           {/* 11: The Old Way vs The Sovereign Way (High Contrast) */}
@@ -103,7 +103,7 @@ export const App: React.FC = () => {
           {/* 19: YouTube Masterclasses & Breakdown Hub */}
           <YouTubeHub />
 
-          {/* 20: Rotating Free Guides & Engineering Blueprints (Interactive Reader) */}
+          {/* 20: Rotating Architecture Blueprints & Guides (Interactive Reader) */}
           <BlogSection />
 
           {/* 21: Real-Time OS Changelog & Live Releases */}

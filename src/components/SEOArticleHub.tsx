@@ -12,7 +12,7 @@ export const SEOArticleHub: React.FC = () => {
           <span>Sovereign Knowledge Vault</span>
         </div>
         <h2 className="font-aquire text-2xl sm:text-3xl font-extrabold text-[#EDF0F5]">
-          Free Guides & <span className="gold-gradient-text">Engineering Blueprints</span>
+          Master Guides & <span className="gold-gradient-text">Engineering Blueprints</span>
         </h2>
         <p className="text-xs sm:text-sm text-[#8B9BB4] mt-2">
           Deep dive articles on AI agents, multi-account scaling, anti-ban infrastructure, and video monetization.
@@ -53,7 +53,7 @@ export const SEOArticleHub: React.FC = () => {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-xl bg-[#0B1120] border border-white/15 hover:border-[#C9A84C] text-xs font-mono font-bold text-[#EDF0F5] hover:text-[#E8D5A3] transition-all"
         >
-          <span>Access All 100+ Free Community Guides </span>
+          <span>Access All 100+ Community Guides →</span>
         </a>
       </div>
 

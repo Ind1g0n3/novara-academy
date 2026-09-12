@@ -85,7 +85,7 @@ export const ComparisonContrast: React.FC = () => {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#0B1120] border border-[#C9A84C]/40 hover:border-[#C9A84C] text-[#E8D5A3] hover:text-white font-bold text-xs uppercase tracking-wider transition-all shadow-lg hover:shadow-[#C9A84C]/20 transform active:scale-95"
         >
-          <span>Upgrade to the Sovereign System (Free Inside Skool)</span>
+          <span>Upgrade to the Sovereign System (Inside Skool)</span>
           <ArrowRight className="w-4 h-4 text-[#C9A84C]" />
         </a>
       </div>

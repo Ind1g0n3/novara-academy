@@ -27,7 +27,7 @@ export const SkoolBanner: React.FC = () => {
         {/* CTA Link Indicator */}
         <span className="inline-flex items-center gap-1 text-xs font-bold text-[#DCBD9B] group-hover:text-white transition-colors pl-1">
           <Sparkles className="w-3.5 h-3.5 text-[#DCBD9B]" />
-          <span>Join Free</span>
+          <span>Join Inner Circle</span>
           <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
         </span>
       </a>

@@ -100,7 +100,7 @@ export const SkoolPreviewShowcase: React.FC = () => {
                 Novara Sovereign Architecture
               </h3>
               <p className="text-xs text-[#CBD5E1] font-mono drop-shadow">
-                skool.com/novara-ai-media-group-5745 • Standard: $59/mo (Free for Genesis Cohort)
+                skool.com/novara-ai-media-group-5745 • Official Academy Membership: $59/mo
               </p>
             </div>
           </div>
@@ -235,8 +235,8 @@ export const SkoolPreviewShowcase: React.FC = () => {
                     OP
                   </div>
                   <div>
-                    <span className="text-xs font-bold text-[#EDF0F5]">Genesis Operator</span>
-                    <span className="text-[10px] font-mono text-[#8B9BB4] ml-2">Pioneer Channel</span>
+                    <span className="text-xs font-bold text-[#EDF0F5]">Inner Circle Operator</span>
+                    <span className="text-[10px] font-mono text-[#8B9BB4] ml-2">Mastermind Channel</span>
                   </div>
                 </div>
                 <h5 className="text-sm font-bold text-[#EDF0F5] mb-1">
@@ -302,10 +302,10 @@ export const SkoolPreviewShowcase: React.FC = () => {
           <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-center sm:text-left">
               <span className="text-xs text-[#EDF0F5] font-bold block">
-                Genesis Pioneer Cohort: 100% Free Lifetime Tier
+                Novara Sovereign Mastermind: $59/month
               </span>
               <span className="text-[11px] text-[#8B9BB4] font-mono">
-                Standard retail price is $59/month on Skool. Capped at first 50 pioneer operators.
+                Direct access to our 6-agent Python codebase, RPA scripts, 150+ prompts, and weekly live teardowns.
               </span>
             </div>
 

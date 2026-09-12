@@ -107,7 +107,7 @@ export const Footer: React.FC<FooterProps> = ({ currentBrand }) => {
               <li><a href="#agents" className="hover:text-[#E8D5A3] transition-colors">Agent Constellation</a></li>
               <li><a href="#curriculum" className="hover:text-[#E8D5A3] transition-colors">University Curriculum</a></li>
               <li><a href="#vault" className="hover:text-[#E8D5A3] transition-colors">Prompt & Script Vault</a></li>
-              <li><a href="#blog" className="hover:text-[#E8D5A3] transition-colors">Rotating Free Blueprints</a></li>
+              <li><a href="#blog" className="hover:text-[#E8D5A3] transition-colors">Architecture Blueprints & Guides</a></li>
               <li><a href="#changelog" className="hover:text-[#E8D5A3] transition-colors">System Changelog</a></li>
               <li><a href="#faq" className="hover:text-[#E8D5A3] transition-colors">Manifesto & FAQ</a></li>
             </ul>

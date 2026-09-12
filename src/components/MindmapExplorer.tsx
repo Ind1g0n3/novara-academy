@@ -188,7 +188,7 @@ export const MindmapExplorer: React.FC = () => {
                         rel="noopener noreferrer"
                         className="px-4 py-1.5 rounded-lg bg-[#C9A84C] text-[#030712] font-mono text-xs font-bold uppercase tracking-wider hover:brightness-110 shadow-md flex items-center gap-1.5"
                       >
-                        <span>Download Full Source in Skool Free</span>
+                        <span>Download Full Source in Skool</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                     </div>

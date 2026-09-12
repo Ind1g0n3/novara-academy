@@ -55,7 +55,7 @@ export const FeaturesChecklist: React.FC = () => {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-10 py-5 rounded-2xl bg-gradient-to-r from-[#C9A84C] via-[#E8D5A3] to-[#C9A84C] text-[#030712] font-aquire font-bold text-xs uppercase tracking-widest hover:brightness-110 shadow-xl shadow-[#C9A84C]/30 transition-all transform active:scale-95"
         >
-          <span>Unlock Everything in Skool Free</span>
+          <span>Unlock Everything Inside Skool</span>
           <ArrowRight className="w-4 h-4" />
         </a>
       </div>

@@ -53,7 +53,7 @@ export const FloatingDock: React.FC = () => {
         <a
           href="#blog"
           className="p-2.5 sm:p-3 rounded-xl text-[#8B9BB4] hover:text-[#EDF0F5] hover:bg-white/10 transition-all hover:scale-110"
-          title="Free Blueprints & Guides"
+          title="Blueprints & Guides"
         >
           <BookOpen className="w-5 h-5 sm:w-5.5 sm:h-5.5 text-[#3B82F6]" />
         </a>

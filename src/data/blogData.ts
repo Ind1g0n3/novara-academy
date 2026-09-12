@@ -5,7 +5,7 @@ export interface BlogPost {
   category: string;
   readTime: string;
   publishDate: string;
-  isRotatingFreeDrop: boolean;
+  isFeaturedDrop: boolean;
   excerpt: string;
   content: string[];
   keyTakeaways: string[];
@@ -19,7 +19,7 @@ export const ROTATING_BLOG_POSTS: BlogPost[] = [
     category: "Anti-Ban Blueprint",
     readTime: "8 min read",
     publishDate: "Updated This Week",
-    isRotatingFreeDrop: true,
+    isFeaturedDrop: true,
     excerpt: "The exact operational framework for running distributed creator accounts ('larpers' & niche theme pages) with isolated fingerprints, zero hardware cross-linking, and safe 8-12 hour post pacing.",
     keyTakeaways: [
       "Why traditional reposting triggers immediate platform device shadowbans.",
@@ -46,7 +46,7 @@ export const ROTATING_BLOG_POSTS: BlogPost[] = [
     category: "Multi-Agent Architecture",
     readTime: "10 min read",
     publishDate: "Updated This Week",
-    isRotatingFreeDrop: true,
+    isFeaturedDrop: true,
     excerpt: "Discover how splitting video creation across 6 specialized AI agents (Hermes, OpenClaw, Antigravity, Codex, Alfred, Oracle) eliminates hallucinations and automates full-scale production.",
     keyTakeaways: [
       "Why single-prompt monolithic AI tools fail at complex video pipelines.",
@@ -74,7 +74,7 @@ export const ROTATING_BLOG_POSTS: BlogPost[] = [
     category: "Hardware & Hardware GPU Compiler",
     readTime: "7 min read",
     publishDate: "Updated This Week",
-    isRotatingFreeDrop: true,
+    isFeaturedDrop: true,
     excerpt: "The engineering blueprint for compiling vertical 2160x3840 4K video using NVIDIA NVENC hardware acceleration without degrading color science or crushing skin tones.",
     keyTakeaways: [
       "Lanczos vertical 2160x3840 scaling formulas for pristine sharpness.",
@@ -98,7 +98,7 @@ export const ROTATING_BLOG_POSTS: BlogPost[] = [
     category: "Retention Science",
     readTime: "6 min read",
     publishDate: "Updated This Week",
-    isRotatingFreeDrop: true,
+    isFeaturedDrop: true,
     excerpt: "How cognitive dopamine release windows (0s, 2.5s, 6.0s, 9.5s, 13.0s) hijack short-form video retention and force platform algorithms to push your videos.",
     keyTakeaways: [
       "The 2.5-second neurological hook window that decides algorithmic reach.",
@@ -125,7 +125,7 @@ export const ROTATING_BLOG_POSTS: BlogPost[] = [
     category: "Agency Monetization",
     readTime: "9 min read",
     publishDate: "Updated This Week",
-    isRotatingFreeDrop: true,
+    isFeaturedDrop: true,
     excerpt: "A complete commercial breakdown for offering autonomous AI media production to high-ticket B2B clients, real estate operators, and personal brands.",
     keyTakeaways: [
       "Why businesses are desperately looking to replace \$15k/mo video agency retainers.",
@@ -149,7 +149,7 @@ export const ROTATING_BLOG_POSTS: BlogPost[] = [
     category: "Community Guide",
     readTime: "5 min read",
     publishDate: "Updated This Week",
-    isRotatingFreeDrop: true,
+    isFeaturedDrop: true,
     excerpt: "A curated analysis of the fastest-growing AI developer and operator communities on Skool, and what sets sovereign engineering groups apart from generic AI slop.",
     keyTakeaways: [
       "The shift from static course portals to collaborative real-time engineering labs.",
@@ -163,7 +163,7 @@ export const ROTATING_BLOG_POSTS: BlogPost[] = [
       "2. **Weekly Live Engineering Builds**: Screen-shared live coding, tool testing, and real-time troubleshooting with the founder and senior builders.",
       "3. **High-Signal Peer Network**: An active discussion feed where members share actual client wins, tool updates, and multi-account scaling tactics.",
       "### Enter the Novara Media Inner Circle",
-      "Our Skool community is 100% free for founding members, offering complete access to the Sovereign Media Production OS, weekly tool teardowns, and direct mastermind mentorship."
+      "Our Skool community offers complete access to the Sovereign Media Production OS, weekly tool teardowns, and direct mastermind mentorship."
     ]
   }
 ];

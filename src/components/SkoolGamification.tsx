@@ -111,7 +111,7 @@ export const SkoolGamification: React.FC = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#C9A84C] to-[#E8D5A3] text-[#030712] font-bold text-xs uppercase tracking-wider hover:brightness-110 shadow-lg shadow-[#C9A84C]/20 transition-all"
           >
-            <span>Start at Level 1 for Free</span>
+            <span>Join at Level 1</span>
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>
@@ -127,7 +127,7 @@ export const SkoolGamification: React.FC = () => {
                 </h4>
               </div>
               <span className="px-2.5 py-0.5 rounded-full bg-[#10B981]/20 text-[#10B981] text-[10px] font-mono font-bold uppercase">
-                FREE FOR MEMBERS
+                INCLUDED FOR MEMBERS
               </span>
             </div>
 

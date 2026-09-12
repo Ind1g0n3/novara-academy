@@ -228,7 +228,7 @@ export const CAPABILITY_DETAILS: CapabilityDetail[] = [
     },
     oldVsNew: {
       oldWay: "Throwing expensive frontier model calls at basic formatting and getting hit with $600 unexpected API bills.",
-      sovereignWay: "Quartermaster free-first smart routing runs 90% of routine swarm tasks completely free."
+      sovereignWay: "Quartermaster smart-routing runs 90% of routine swarm tasks at zero marginal cost with local & cost-neutral fallbacks."
     }
   }
 ];

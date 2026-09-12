@@ -144,8 +144,8 @@ export const SKOOL_COMMUNITY_PERKS: SkoolPerk[] = [
     description: "Stay ahead of platform algorithm shifts with constantly updated anti-ban configs and blueprints."
   },
   {
-    icon: "Sparkles",
-    title: "100% Free Lifetime Community Membership",
-    description: "Zero monthly subscription fees for founding cohort members. Keep full access forever."
+    icon: "ShieldCheck",
+    title: "Exclusive Inner Circle Mastermind",
+    description: "Complete access to our private mastermind network, live screen-share builds, and vault drops."
   }
 ];

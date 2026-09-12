@@ -10,7 +10,8 @@ import {
   X, 
   ExternalLink,
   HelpCircle,
-  Activity
+  Activity,
+  User
 } from "lucide-react";
 
 interface NavbarProps {
@@ -23,6 +24,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
+    { name: "About Founder", href: "#about", icon: User },
     { name: "SMP Architecture", href: "#architecture", icon: Layers },
     { name: "Agent Constellation", href: "#agents", icon: Compass },
     { name: "Curriculum", href: "#curriculum", icon: BookOpen },
@@ -90,7 +92,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
               rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#C9A84C] via-[#E8D5A3] to-[#C9A84C] text-[#030712] font-bold text-xs uppercase tracking-wider hover:brightness-110 shadow-lg shadow-[#C9A84C]/20 transition-all duration-200 transform active:scale-95"
             >
-              <span>Join Skool Free</span>
+              <span>Join Inner Circle</span>
             </a>
           </div>
 
@@ -149,7 +151,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
               rel="noopener noreferrer"
               className="w-full py-3 rounded-lg bg-[#C9A84C] text-[#030712] font-bold text-center text-xs uppercase tracking-wider"
             >
-              Join Skool Community Free
+              Join Skool Community
             </a>
           </div>
         </div>
