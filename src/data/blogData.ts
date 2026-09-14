@@ -13,6 +13,53 @@ export interface BlogPost {
 
 export const ROTATING_BLOG_POSTS: BlogPost[] = [
   {
+    id: "blog-multi-agent-swarm",
+    slug: "how-i-built-a-5-agent-content-swarm",
+    title: "How I Built A 5-Agent Content Swarm In 1 Day (Step-by-Step)",
+    category: "Multi-Agent Architecture",
+    readTime: "9 min read",
+    publishDate: "Updated September 13, 2026",
+    isFeaturedDrop: true,
+    excerpt: "The exact engineering blueprint for coordinating 5 autonomous agents (Hermes, OpenClaw, Codex, Alfred, Oracle) to produce, render, and publish 4K content with zero human copy-pasting.",
+    keyTakeaways: [
+      "Why single-prompt LLM tools collapse under multi-stage video rendering pipelines.",
+      "The cross-agent JSON communication schema that eliminates hallucinations and human glue.",
+      "How local state reconciliation loops allow unattended 24/7 video rendering on consumer GPUs."
+    ],
+    content: [
+      "If you are still using a single prompt to generate scripts, design visuals, and edit videos, you are working with an obsolete model.",
+      "Single-prompt workflows inevitably fail because video production requires fundamentally different cognitive tasks: market intelligence, creative copy, mathematical frame pacing, hardware GPU acceleration, and browser automation.",
+      "## The 5-Agent Constellation",
+      "Instead of forcing one model to juggle all five responsibilities, we break the media production pipeline into 5 discrete autonomous agents:",
+      "- **ORACLE (The Market Scanner)**: Ingests viral hooks, trending formats, and YouTube search spikes to score content opportunities.",
+      "- **HERMES (The Orchestrator)**: Evaluates signals, coordinates task queues, routes API spend, and monitors GPU load.",
+      "- **CODEX (The Render Engineer)**: Formats script typography, compiles 4K Lanczos FFmpeg commands, and validates audio normalization.",
+      "- **OPENCLAW (The Execution Daemon)**: Dispatches rendered files to isolated browser sessions and enforces anti-ban mutex locks.",
+      "- **ALFRED (The Executive Voice)**: Provides real-time operator notifications, audio reviews, and manual safety overrides.",
+      "## The JSON Communication Contract",
+      "To prevent agents from hallucinating, every handoff between workers uses an immutable, strongly-typed JSON contract:",
+      `{
+  "job_id": "job_4k_render_20260913_01",
+  "topic": "Multi-Agent AI Swarms for Content Creation",
+  "resolution": "2160x3840",
+  "fps": 60,
+  "hooks": [
+    {"timestamp": "0.0s", "text": "Why single-prompt AI video tools are officially obsolete."},
+    {"timestamp": "2.5s", "text": "Here is the exact 5-agent swarm replacing 10-person teams."}
+  ],
+  "render_flags": "-c:v h264_nvenc -preset p7 -b:v 35M -pix_fmt yuv420p"
+}`,
+      "## Autonomous Self-Healing Pipelines",
+      "When Codex generates an FFmpeg command, our local execution watchdog tests the command in a dry-run sandbox before touching real GPU cycles.",
+      "If a frame buffer overflow occurs, the error is piped directly back into Codex with the exact memory trace.",
+      "Codex adjusts the video bit rate and re-submits the job in under 400 milliseconds without requiring operator intervention.",
+      "## Also On Our Network",
+      "🌐 [Read the enterprise architecture breakdown on Novara Media](https://novaramedia.store/blog/multi-agent-ai-swarms-content-creation) — discover how enterprise media teams use multi-agent swarms to replace 10-person production teams.",
+      "## The Complete Production Codebase",
+      "Inside our Skool community, we share the raw Python agent coordinators, local GPU render daemons, and prompt vaults used in this blueprint."
+    ]
+  },
+  {
     id: "blog-1",
     slug: "run-10-faceless-accounts-without-bans",
     title: "How to Run 10+ Faceless Accounts on Autopilot (The Anti-Ban Infrastructure Protocol)",
