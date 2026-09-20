@@ -12,45 +12,6 @@ export interface BlogPost {
 }
 
 export const ROTATING_BLOG_POSTS: BlogPost[] = [
-  {
-    id: "blog-why-monolithic-prompts-fail-in-4k-pipelines",
-    slug: "why-monolithic-prompts-fail-in-4k-pipelines",
-    title: "Why Monolithic Prompts Fail In 4K Video Pipelines (Tested)",
-    category: "Multi-Agent Architecture",
-    readTime: "7 min read",
-    publishDate: "Updated September 20, 2026",
-    isFeaturedDrop: true,
-    excerpt: "Monolithic prompts fail in 4K video pipelines due to their inability to handle complex, high-resolution media workflows. Autonomous multi-agent swarms offer a solution by dividing cognitive labor.",
-    keyTakeaways: [
-        "Single-prompt LLM tools are insufficient for 4K media workflows",
-        "Dividing cognitive labor among multiple agents improves processing efficiency",
-        "Autonomous multi-agent swarms enable scalable, high-resolution media processing"
-    ],
-    content: [
-        "Monolithic prompts are single, rigid instructions that cannot adapt to complex media workflows.",
-        "4K video pipelines require flexible, dynamic processing to handle high-resolution footage.",
-        "## Introduction to Autonomous Multi-Agent Swarms",
-        "Autonomous multi-agent swarms consist of multiple, specialized agents working together to achieve a common goal.",
-        "Each agent in the swarm is responsible for a specific task, such as object detection or audio processing.",
-        "By dividing cognitive labor among multiple agents, swarms can process complex media workflows more efficiently.",
-        "Single-prompt LLM tools, on the other hand, rely on a single, general-purpose model to handle all tasks.",
-        "This monolithic approach breaks down in 4K media workflows, where high-resolution footage and complex processing requirements overwhelm the model.",
-        "## Mechanics of Autonomous Multi-Agent Swarms",
-        "Autonomous multi-agent swarms operate through a decentralized, distributed architecture.",
-        "Each agent in the swarm communicates with its neighbors to coordinate tasks and share information.",
-        "This decentralized approach enables swarms to scale more easily and adapt to changing workflow requirements.",
-        "In contrast, single-prompt LLM tools rely on a centralized, monolithic architecture that is less flexible and less scalable.",
-        "## Code Contracts and Execution Steps",
-        "To implement an autonomous multi-agent swarm, developers must define clear code contracts and execution steps.",
-        "Each agent in the swarm must be designed to perform a specific task, and the interactions between agents must be carefully coordinated.",
-        "By following these principles, developers can create scalable, efficient media processing pipelines that handle 4K video and other high-resolution media workflows.",
-        "## Also On Our Network",
-        "\ud83c\udf10 [Read the full executive analysis on Novara Media](https://novaramedia.store/blog/5-autonomous-agents-replace-10-person-teams-2026) \u2014 discovering how enterprise teams capture search authority with autonomous agent constellations.",
-        "## The Complete Production Codebase",
-        "Inside our Skool community, we share the raw Python agent coordinators, local GPU render daemons, and prompt vaults used in this blueprint."
-    ]
-},
-  {
     id: "blog-why-monolithic-prompts-fail-in-4k-pipelines",
     slug: "why-monolithic-prompts-fail-in-4k-pipelines",
     title: "Why Monolithic Prompts Fail In 4K Video Pipelines (Tested)",
