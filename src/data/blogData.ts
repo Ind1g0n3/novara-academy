@@ -12,6 +12,7 @@ export interface BlogPost {
 }
 
 export const ROTATING_BLOG_POSTS: BlogPost[] = [
+  {
     id: "blog-why-monolithic-prompts-fail-in-4k-pipelines",
     slug: "why-monolithic-prompts-fail-in-4k-pipelines",
     title: "Why Monolithic Prompts Fail In 4K Video Pipelines (Tested)",
