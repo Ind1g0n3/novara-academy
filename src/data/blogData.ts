@@ -13,6 +13,46 @@ export interface BlogPost {
 
 export const ROTATING_BLOG_POSTS: BlogPost[] = [
   {
+    id: "blog-why-auto-captions-destroy-watch-time-frame-pacing-fix",
+    slug: "why-auto-captions-destroy-watch-time-frame-pacing-fix",
+    title: "Why Auto-Captions Destroy Watch Time (Frame-Pacing Solution)",
+    category: "Attention Engineering",
+    readTime: "7 min read",
+    publishDate: "Updated September 25, 2026",
+    isFeaturedDrop: true,
+    excerpt: "Auto-captioning apps can destroy watch time by disrupting the pacing and flow of a video, but frame-accurate subtitle timing can help retain viewers. By using programmatic kinetic typography and audio pacing, creators can improve the overall viewing experience.",
+    keyTakeaways: [
+        "Auto-captioning apps often fail to account for audio pacing and kinetic typography, leading to a disjointed viewing experience",
+        "Frame-accurate subtitle timing is crucial for retaining viewers and improving watch time",
+        "Programmatic kinetic typography and audio pacing can be used to create a more immersive and engaging video experience"
+    ],
+    content: [
+        "Auto-captioning apps have become increasingly popular for their convenience and ease of use.",
+        "However, these apps often prioritize speed and accuracy over pacing and flow.",
+        "## The Problem with Auto-Captions",
+        "When auto-captions are added to a video, they can disrupt the natural pacing and rhythm of the audio.",
+        "This can lead to a disjointed viewing experience, where the captions and audio are not in sync.",
+        "The result is a video that feels choppy and unengaging, causing viewers to lose interest and drop off.",
+        "## The Importance of Frame-Accurate Subtitle Timing",
+        "Frame-accurate subtitle timing is crucial for creating a seamless and immersive viewing experience.",
+        "By timing subtitles to the exact frame, creators can ensure that the captions and audio are perfectly in sync.",
+        "This helps to maintain the natural pacing and flow of the video, keeping viewers engaged and interested.",
+        "## Programmatic Kinetic Typography and Audio Pacing",
+        "Programmatic kinetic typography and audio pacing involve using code to control the timing and placement of captions and audio elements.",
+        "This allows creators to have precise control over the pacing and flow of their video, ensuring a cohesive and engaging viewing experience.",
+        "By using programmatic kinetic typography and audio pacing, creators can add emphasis and drama to key moments in their video.",
+        "They can also use these techniques to create a sense of tension or suspense, keeping viewers on the edge of their seats.",
+        "## Execution Steps",
+        "To implement programmatic kinetic typography and audio pacing, creators will need to use a combination of coding languages and software tools.",
+        "They will need to write code to control the timing and placement of captions and audio elements, and use software tools to edit and refine their video.",
+        "By following these steps and using the right tools, creators can produce high-quality videos with precise control over pacing and flow.",
+        "## Also On Our Network",
+        "\ud83c\udf10 [Read the full executive analysis on Novara Media](https://novaramedia.store/blog/programmatic-kinetic-typography-90-percent-retention) \u2014 discovering how enterprise teams capture search authority with autonomous agent constellations.",
+        "## The Complete Production Codebase",
+        "Inside our Skool community, we share the raw Python agent coordinators, local GPU render daemons, and prompt vaults used in this blueprint."
+    ]
+},
+  {
     id: "blog-the-hidden-risk-of-saas-lockin-self-hosted-alternative",
     slug: "the-hidden-risk-of-saas-lockin-self-hosted-alternative",
     title: "The Hidden Risk Of SaaS Lock-In (And The Self-Hosted Fix)",
