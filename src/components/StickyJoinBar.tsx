@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import { ArrowRight, Sparkles, X } from "lucide-react";
+import { ArrowRight, Sparkles, X, Download } from "lucide-react";
 
-export const StickyJoinBar: React.FC = () => {
+interface StickyJoinBarProps {
+  onOpenLeadModal?: (source?: string) => void;
+}
+
+export const StickyJoinBar: React.FC<StickyJoinBarProps> = ({ onOpenLeadModal }) => {
   const [isDismissed, setIsDismissed] = useState(false);
 
   if (isDismissed) return null;
@@ -28,6 +32,16 @@ export const StickyJoinBar: React.FC = () => {
 
         {/* Right Side: CTA Button & Dismiss */}
         <div className="flex items-center gap-2.5 w-full sm:w-auto justify-center">
+          {/* Secondary Free Vault Option */}
+          <button
+            type="button"
+            onClick={() => onOpenLeadModal?.("sticky_bar")}
+            className="hidden md:inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-[#0B1120] border border-[#C9A84C]/40 hover:bg-[#C9A84C]/20 text-[11px] font-mono font-semibold text-[#E8D5A3] transition-colors cursor-pointer whitespace-nowrap"
+          >
+            <Download className="w-3.5 h-3.5 text-[#C9A84C]" />
+            <span>Free Vault</span>
+          </button>
+
           <a
             href="https://www.skool.com/novara-ai-media-group-5745/about"
             target="_blank"

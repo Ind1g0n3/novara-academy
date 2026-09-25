@@ -2,16 +2,11 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "redirects": [
-    {
-      "source": "/blog(.*)",
-      "destination": "/#blog",
-      "permanent": false
-    }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/((?!assets/|courses/|fonts/|.*\\..*).*)",
+      "source": "/((?!assets/|courses/|fonts/|blog/|.*\\..*).*)",
       "destination": "/index.html"
     }
   ]

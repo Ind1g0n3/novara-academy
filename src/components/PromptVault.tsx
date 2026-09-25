@@ -8,10 +8,15 @@ import {
   Sparkles, 
   ArrowRight, 
   ShieldCheck,
-  Layers
+  Layers,
+  Download
 } from "lucide-react";
 
-export const PromptVault: React.FC = () => {
+interface PromptVaultProps {
+  onOpenLeadModal?: (source?: string) => void;
+}
+
+export const PromptVault: React.FC<PromptVaultProps> = ({ onOpenLeadModal }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
   const categories = ["All", "Prompts", "Scripts", "Mindmaps", "SOPs"];
@@ -126,6 +131,31 @@ export const PromptVault: React.FC = () => {
             </div>
           );
         })}
+      </div>
+
+      {/* Free Master Prompt & Blueprint Download Card */}
+      <div className="mt-14 max-w-3xl mx-auto p-6 rounded-2xl bg-gradient-to-r from-[#0B1120] via-[#111827] to-[#0B1120] border-2 border-[#C9A84C]/40 shadow-[0_0_40px_rgba(201,168,76,0.15)] flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+        <div>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C9A84C]/15 border border-[#C9A84C]/30 text-[11px] font-mono font-bold text-[#F5E2B3] uppercase tracking-wider mb-2">
+            <Download className="w-3 h-3 text-[#C9A84C]" />
+            <span>FREE STARTER ASSET DROP</span>
+          </div>
+          <h3 className="font-aquire text-base sm:text-lg font-bold text-white uppercase tracking-wide mb-1">
+            Want to test our raw architecture first?
+          </h3>
+          <p className="text-xs sm:text-sm text-[#94A3B8]">
+            Download the Hermes Orchestrator prompt, cognitive routing JSON schema, and Anti-AI-Slop guide (.HTML offline pack) free.
+          </p>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => onOpenLeadModal?.("prompt_vault_card")}
+          className="flex-shrink-0 py-3 px-5 rounded-xl font-mono text-xs font-bold uppercase tracking-wider text-[#030712] bg-gradient-to-r from-[#FFF6DD] via-[#E8D5A3] to-[#C9A84C] hover:brightness-110 shadow-lg shadow-[#C9A84C]/25 transition-all flex items-center gap-2 cursor-pointer"
+        >
+          <Download className="w-4 h-4" />
+          <span>Claim Free Vault</span>
+        </button>
       </div>
 
       {/* Trust Anchor Footnote */}

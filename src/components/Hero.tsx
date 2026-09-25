@@ -1,12 +1,13 @@
 import React from "react";
-import { Sparkles, Play, Check, Compass, ArrowRight } from "lucide-react";
+import { Sparkles, Play, Check, Compass, ArrowRight, Download, ShieldCheck } from "lucide-react";
 import { NovaraLogo } from "./NovaraLogo";
 
 interface HeroProps {
   currentBrand: string;
+  onOpenLeadModal?: (source?: string) => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ currentBrand }) => {
+export const Hero: React.FC<HeroProps> = ({ currentBrand, onOpenLeadModal }) => {
   return (
     <section className="relative pt-6 pb-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center overflow-hidden">
       
@@ -94,7 +95,7 @@ export const Hero: React.FC<HeroProps> = ({ currentBrand }) => {
         </div>
       </div>
 
-      {/* Primary High-Impact CTA Button */}
+      {/* Primary High-Impact CTA Button & Secondary Free Vault Option */}
       <div className="space-y-4 mb-8">
         <a
           href="https://www.skool.com/novara-ai-media-group-5745/about"
@@ -107,9 +108,35 @@ export const Hero: React.FC<HeroProps> = ({ currentBrand }) => {
           <ArrowRight className="w-5 h-5 ml-1" />
         </a>
 
-        <p className="text-xs font-mono text-[#64748B]">
-          🔒 Official Skool Community Access • Instant Unlock of Locked Code & Prompts
-        </p>
+        {/* Secondary Low-Friction Lead Capture CTA */}
+        <div>
+          <button
+            type="button"
+            onClick={() => onOpenLeadModal?.("hero_secondary")}
+            className="inline-flex items-center justify-center gap-2 text-xs sm:text-sm font-mono text-[#E8D5A3] hover:text-white underline underline-offset-4 decoration-[#C9A84C]/50 hover:decoration-[#C9A84C] transition-colors cursor-pointer py-1.5"
+          >
+            <Download className="w-4 h-4 text-[#C9A84C]" />
+            <span>Not ready to subscribe? Download the 2026 Swarm Blueprint &amp; Master Prompts Free &rarr;</span>
+          </button>
+        </div>
+
+        {/* Risk-Reversal Trust Anchors */}
+        <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-mono text-[#8B9BB4] pt-2">
+          <span className="flex items-center gap-1.5 text-[#10B981]">
+            <Check className="w-4 h-4 text-[#10B981]" />
+            <span>Day-1 Vault Access</span>
+          </span>
+          <span>•</span>
+          <span className="flex items-center gap-1.5">
+            <ShieldCheck className="w-4 h-4 text-[#C9A84C]" />
+            <span>Cancel in 1-Click in Skool</span>
+          </span>
+          <span>•</span>
+          <span className="flex items-center gap-1.5">
+            <Check className="w-4 h-4 text-[#10B981]" />
+            <span>30-Day Money-Back Guarantee</span>
+          </span>
+        </div>
 
         {/* Updated Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#10B981]/15 border border-[#10B981]/40 text-[#A7F3D0] text-xs font-mono font-semibold mt-2">

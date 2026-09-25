@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import BackgroundVideo from "./components/BackgroundVideo";
 import FuturisticGridBackground from "./components/FuturisticGridBackground";
 import SkoolBanner from "./components/SkoolBanner";
@@ -27,9 +27,30 @@ import ManifestoFAQ from "./components/ManifestoFAQ";
 import FloatingDock from "./components/FloatingDock";
 import StickyJoinBar from "./components/StickyJoinBar";
 import Footer from "./components/Footer";
+import LeadCaptureModal from "./components/LeadCaptureModal";
 
 export const App: React.FC = () => {
   const currentBrand = "NOVARA ACADEMY";
+  const [leadModalOpen, setLeadModalOpen] = useState(false);
+  const [leadModalSource, setLeadModalSource] = useState("direct");
+
+  const handleOpenLeadModal = (source = "direct") => {
+    setLeadModalSource(source);
+    setLeadModalOpen(true);
+  };
+
+  // Exit intent detection (triggers once per session on desktop cursor leave)
+  useEffect(() => {
+    const handleMouseLeave = (e: MouseEvent) => {
+      if (e.clientY <= 15 && !sessionStorage.getItem("novara_exit_intent_fired")) {
+        sessionStorage.setItem("novara_exit_intent_fired", "true");
+        setLeadModalSource("exit_intent");
+        setLeadModalOpen(true);
+      }
+    };
+    document.addEventListener("mouseleave", handleMouseLeave);
+    return () => document.removeEventListener("mouseleave", handleMouseLeave);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#05080F] text-[#EDF0F5] relative overflow-x-hidden selection:bg-[#C9A84C]/30 selection:text-[#E8D5A3] pb-16">
@@ -45,12 +66,12 @@ export const App: React.FC = () => {
         <SkoolBanner />
 
         {/* 01: Sticky Glassmorphic Navbar */}
-        <Navbar />
+        <Navbar onOpenLeadModal={handleOpenLeadModal} />
 
         {/* Main High-Converting Sales Canvas */}
         <main className="flex-grow">
           {/* 02: AI Profit Boardroom Style Hero */}
-          <Hero currentBrand={currentBrand} />
+          <Hero currentBrand={currentBrand} onOpenLeadModal={handleOpenLeadModal} />
 
           {/* 03: Social Proof & System Uptime Stats */}
           <SocialProofStats />
@@ -98,7 +119,7 @@ export const App: React.FC = () => {
           <CurriculumRoadmap />
 
           {/* 18: Proprietary Master Prompt & Automation Vault (Locked Previews) */}
-          <PromptVault />
+          <PromptVault onOpenLeadModal={handleOpenLeadModal} />
 
           {/* 19: YouTube Masterclasses & Breakdown Hub */}
           <YouTubeHub />
@@ -117,10 +138,17 @@ export const App: React.FC = () => {
         <FloatingDock />
 
         {/* Persistent Sticky Join Bar for Desktop & Mobile */}
-        <StickyJoinBar />
+        <StickyJoinBar onOpenLeadModal={handleOpenLeadModal} />
 
         {/* Luxury Footer */}
         <Footer currentBrand={currentBrand} />
+
+        {/* High-Converting Lead Capture Modal & Trojan-Horse Downloader */}
+        <LeadCaptureModal
+          isOpen={leadModalOpen}
+          onClose={() => setLeadModalOpen(false)}
+          triggerSource={leadModalSource}
+        />
       </div>
 
     </div>

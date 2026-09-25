@@ -11,16 +11,18 @@ import {
   ExternalLink,
   HelpCircle,
   Activity,
-  User
+  User,
+  Download
 } from "lucide-react";
 
 interface NavbarProps {
   currentBrand?: string;
   onBrandChange?: (brand: string) => void;
   brandOptions?: string[];
+  onOpenLeadModal?: (source?: string) => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = () => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenLeadModal }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
@@ -74,6 +76,16 @@ export const Navbar: React.FC<NavbarProps> = () => {
 
           {/* Right Action Area */}
           <div className="hidden sm:flex items-center gap-3">
+            {/* Free Lead Magnet Vault Button */}
+            <button
+              type="button"
+              onClick={() => onOpenLeadModal?.("navbar_pill")}
+              className="px-3.5 py-2.5 rounded-xl bg-[#C9A84C]/10 border border-[#C9A84C]/40 hover:bg-[#C9A84C]/25 text-xs font-mono font-bold text-[#E8D5A3] transition-all duration-200 flex items-center gap-1.5 cursor-pointer shadow-md"
+            >
+              <Download className="w-3.5 h-3.5 text-[#C9A84C]" />
+              <span>Free Vault</span>
+            </button>
+
             {/* Link to B2B Main Site */}
             <a
               href="https://novaramedia.store"
@@ -98,6 +110,14 @@ export const Navbar: React.FC<NavbarProps> = () => {
 
           {/* Mobile Hamburger Button */}
           <div className="flex xl:hidden items-center gap-2">
+            <button
+              type="button"
+              onClick={() => onOpenLeadModal?.("navbar_mobile_top")}
+              className="px-3 py-1.5 rounded-lg bg-[#C9A84C]/20 border border-[#C9A84C]/50 text-[#F5E2B3] font-mono font-bold text-[11px] uppercase flex items-center gap-1 cursor-pointer"
+            >
+              <Download className="w-3 h-3 text-[#C9A84C]" />
+              <span>Vault</span>
+            </button>
             <a
               href="https://www.skool.com/novara-ai-media-group-5745/about"
               target="_blank"
@@ -120,6 +140,18 @@ export const Navbar: React.FC<NavbarProps> = () => {
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="xl:hidden bg-[#05080F] border-b border-[#1E293B] px-4 pt-3 pb-6 space-y-2">
+          {/* Mobile Lead Magnet Banner */}
+          <button
+            type="button"
+            onClick={() => {
+              setMobileMenuOpen(false);
+              onOpenLeadModal?.("navbar_mobile_drawer");
+            }}
+            className="w-full py-3 px-4 rounded-xl bg-[#C9A84C]/15 border border-[#C9A84C]/50 text-xs font-mono font-bold text-[#F5E2B3] uppercase tracking-wider flex items-center justify-center gap-2 mb-3 cursor-pointer"
+          >
+            <Download className="w-4 h-4 text-[#C9A84C]" />
+            <span>Download Free 2026 Swarm Vault (.HTML)</span>
+          </button>
           {navLinks.map((link) => {
             const Icon = link.icon;
             return (
