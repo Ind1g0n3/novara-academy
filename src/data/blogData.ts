@@ -13,6 +13,47 @@ export interface BlogPost {
 
 export const ROTATING_BLOG_POSTS: BlogPost[] = [
   {
+    id: "blog-after-effects-vs-remotion-code-driven-video",
+    slug: "after-effects-vs-remotion-code-driven-video",
+    title: "After Effects vs Remotion: Why Code-Driven Video Wins (Tested)",
+    category: "Video Engineering",
+    readTime: "7 min read",
+    publishDate: "Updated September 26, 2026",
+    isFeaturedDrop: true,
+    excerpt: "Remotion's code-driven approach revolutionizes video pipelines by offering flexibility and scalability, outperforming traditional After Effects GUI timelines. This shift in architecture enables seamless integration and automation.",
+    keyTakeaways: [
+        "Remotion's programmatic video pipelines offer unparalleled flexibility and customization",
+        "Code-driven composition enables seamless integration with existing workflows and tools",
+        "Automating video production with Remotion reduces production time and increases output quality"
+    ],
+    content: [
+        "Remotion is a powerful tool for creating programmatic video pipelines, allowing for dynamic and customizable video content.",
+        "After Effects, on the other hand, relies on a graphical user interface timeline, limiting its flexibility and scalability.",
+        "## Introduction to Remotion",
+        "Remotion's architecture is based on a node-based system, enabling developers to create complex video compositions using code.",
+        "This code-driven approach allows for seamless integration with existing workflows and tools, streamlining the video production process.",
+        "Remotion's API provides a robust set of features for customizing and extending its functionality, making it an ideal choice for large-scale video production.",
+        "## Comparison with After Effects",
+        "After Effects' GUI timeline can become cumbersome and difficult to manage for complex video projects, leading to increased production time and costs.",
+        "Remotion's code-driven approach eliminates these issues, enabling developers to create and manage complex video compositions with ease.",
+        "## Setting up a Remotion Project",
+        "To get started with Remotion, developers need to install the Remotion CLI and create a new project using the command-line interface.",
+        "Remotion projects are composed of a series of nodes, each representing a specific video element or effect.",
+        "## Building a Video Pipeline",
+        "Developers can use Remotion's API to create custom nodes and effects, allowing for unparalleled flexibility and customization.",
+        "Remotion's node-based system enables developers to create complex video compositions by connecting and configuring nodes.",
+        "## Executing and Rendering",
+        "Once a video pipeline is built, Remotion can render the final video output in a variety of formats and resolutions.",
+        "Remotion's rendering engine is highly optimized, allowing for fast and efficient video rendering even for complex compositions.",
+        "## Conclusion",
+        "Remotion's code-driven approach to video pipelines offers a significant advantage over traditional After Effects GUI timelines, enabling developers to create flexible, customizable, and scalable video content.",
+        "## Also On Our Network",
+        "\ud83c\udf10 [Read the full executive analysis on Novara Media](https://novaramedia.store/blog/remotion-programmatic-video-pipeline-architecture) \u2014 discovering how enterprise teams capture search authority with autonomous agent constellations.",
+        "## The Complete Production Codebase",
+        "Inside our Skool community, we share the raw Python agent coordinators, local GPU render daemons, and prompt vaults used in this blueprint."
+    ]
+},
+  {
     id: "blog-why-auto-captions-destroy-watch-time-frame-pacing-fix",
     slug: "why-auto-captions-destroy-watch-time-frame-pacing-fix",
     title: "Why Auto-Captions Destroy Watch Time (Frame-Pacing Solution)",
