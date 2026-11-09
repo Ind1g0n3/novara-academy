@@ -38,7 +38,7 @@ export const FoundersLetter: React.FC = () => {
             {/* Portrait Frame */}
             <div className="relative w-full max-w-[220px] sm:max-w-[240px] aspect-[4/5] rounded-2xl overflow-hidden border-2 border-[#C9A84C]/40 shadow-2xl bg-[#080B14]">
               <img
-                src="/founder.jpg"
+                src="/founder-portrait.jpg"
                 alt="Ricardo Gutierrez - Founder & Systems Architect"
                 className="w-full h-full object-cover object-top"
                 onError={(e) => {
@@ -185,7 +185,7 @@ export const FoundersLetter: React.FC = () => {
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-xl overflow-hidden border border-[#C9A84C] shadow-md bg-[#080B14] shrink-0">
                   <img
-                    src="/founder.jpg"
+                    src="/founder-portrait.jpg"
                     alt="Ricardo Gutierrez avatar"
                     className="w-full h-full object-cover object-top"
                   />
